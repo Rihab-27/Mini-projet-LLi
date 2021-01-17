@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Gestion des documents scolaires</title>
+	<style type="text/css">
+     td{
+     	height: 40px;
+     }
+	</style>
+</head>
+<body>
+	<form>
+
+		<fieldset>
+			<legend>Gestion des documents scolaires </legend>
+			<table>
+				<tr>
+					<td><label>Titre :</label></td>
+					<td><input type="text" placeholder="saisir le titre"/> </td>
+				</tr>
+				<tr>
+					<td><label>Auteur :</label></td>
+					<td><input type="text" placeholder="saisir l'auteur"/></td>
+				</tr>
+           <tr>
+		   <div>
+              <td> <label for="bday"> Date d'édition :</label>
+                <input type="date" id="bday" name="bday">
+              </div></td> 
+			  </tr>
+				<tr>
+					<td><label>Photo :</label></td>
+					<td><input type="file" accept="image/jpeg,image/png"></td>
+				</tr>
+				<tr>
+					<td colspan="3" align="center"><input type="submit" value="ajouter"/>  <input type="submit" value="modifier"/>  <input type="submit" value="supprimer"/></td>
+				</tr>
+			</table>
+		</fieldset>
+		</form>
+
+</body>
+</html>

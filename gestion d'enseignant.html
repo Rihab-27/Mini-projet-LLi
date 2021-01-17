@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Gestion des enseignants</title>
+	<style type="text/css">
+     td{
+     	height: 40px;
+     }
+	</style>
+</head>
+<body>
+	<form>
+
+		<fieldset>
+			<legend>Gestion des enseignants </legend>
+			<table>
+				<tr>
+					<td><label>Nom :</label></td>
+					<td><input type="text" placeholder="saisir votre nom"/> </td>
+				</tr>
+				<tr>
+					<td><label>Prenom :</label></td>
+					<td><input type="text" placeholder="saisir votre prenom"/></td>
+				</tr>
+				<tr><label>numèro de téléphone :</label></td>
+					<td><input type="tel" placeholder="saisir votre numèro de téléphone"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required/> </td>
+				</tr>
+           <tr>
+		   <div>
+              <td> <label for="bday"> Date de naissance :</label>
+                <input type="date" id="bday" name="bday">
+              </div></td> 
+			  </tr>
+				<tr>
+					<td>Sexe :</td>
+					<td>
+						Masculin <input type="radio" name="sexe" value="M" checked="checked">
+						Féminin <input type="radio" name="sexe" value="F">
+					</td>
+				</tr>
+				<tr>
+					<td><label>Photo :</label></td>
+					<td><input type="file" accept="image/jpeg,image/png"></td>
+				</tr>
+				<tr>
+					<td><label>Grade :</label></td>
+					<td>
+						<select>
+						<option> maître principale</option>
+						<option>enseignant </option>
+					</select>
+				</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><input type="submit" value="envoyer"/>  <input type="reset" value="Annuler"/></td>
+				</tr>
+			</table>
+		</fieldset>
+</form>
+</body>
+</html>
